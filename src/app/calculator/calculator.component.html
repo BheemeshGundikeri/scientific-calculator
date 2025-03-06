@@ -1,0 +1,55 @@
+<h1 class="text-center">Digital Scientific Calculator</h1>
+<div class="calculator mt-5">
+  <input type="text" [(ngModel)]="display" (keydown)="handleKeyboardInput($event)" readonly />
+
+  <table>
+    <tr>
+      <td><button (click)="clear()">CE</button></td>
+      <td><button (click)="deleteLast()">⌫</button></td>
+      <td><button (click)="appendNumber('(')">(</button></td>
+      <td><button (click)="appendNumber(')')">)</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendNumber('7')">7</button></td>
+      <td><button (click)="appendNumber('8')">8</button></td>
+      <td><button (click)="appendNumber('9')">9</button></td>
+      <td><button (click)="chooseOperation('/')">/</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendNumber('4')">4</button></td>
+      <td><button (click)="appendNumber('5')">5</button></td>
+      <td><button (click)="appendNumber('6')">6</button></td>
+      <td><button (click)="chooseOperation('*')">*</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendNumber('1')">1</button></td>
+      <td><button (click)="appendNumber('2')">2</button></td>
+      <td><button (click)="appendNumber('3')">3</button></td>
+      <td><button (click)="chooseOperation('-')">-</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendNumber('0')">0</button></td>
+      <td><button (click)="appendNumber('.')">.</button></td>
+      <td><button (click)="chooseOperation('+')">+</button></td>
+      <td><button class="equal" (click)="calculate()">=</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendFunction('sqrt')">√</button></td>
+      <td><button (click)="appendFunction('log')">log</button></td>
+      <td><button (click)="appendFunction('ln')">ln</button></td>
+      <td><button (click)="appendFunction('^')">xʸ</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendFunction('sin')">sin</button></td>
+      <td><button (click)="appendFunction('cos')">cos</button></td>
+      <td><button (click)="appendFunction('tan')">tan</button></td>
+      <td><button (click)="appendFunction('%')">%</button></td>
+    </tr>
+    <tr>
+      <td><button (click)="appendConstant('π')">π</button></td>
+      <td><button (click)="appendConstant('e')">e</button></td>
+      <td><button (click)="appendFunction('!')">x!</button></td>
+      <td><button class="equal" (click)="calculate()">Calculate</button></td>
+    </tr>
+  </table>
+</div>
