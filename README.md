@@ -2,6 +2,15 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.6.
 
+
+# Analog Clock
+
+This is an Angular application displaying an analog clock.
+
+## 🚀 [Run the Application](https://bheemeshgundikeri.github.io/scientific-calculator/)
+
+Click the link above to see the application live.
+
 ## Development server
 
 To start a local development server, run:
